@@ -22,6 +22,7 @@ border-radius: 8px;
 padding-top: 26px;
 margin: 25px auto
 
+
 `;
 
 export const Title = styled.h1`
