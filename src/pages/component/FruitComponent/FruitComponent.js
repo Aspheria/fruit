@@ -5,9 +5,12 @@ import {
   Card,
   Text,
   TextContainer,
+  Header
 } from "./style";
 
 import React, { useState, useEffect } from "react";
+import { Link } from 'react-router-dom';
+
 
 function FruitComponent() {
   const [fruits, setFruits] = useState([]);
@@ -24,8 +27,11 @@ function FruitComponent() {
     fetchFruits();
   }, []);
 
-  return (
+   return (
     <Container>
+      <Header>
+        <Link to="/home">Voltar</Link>
+      </Header>
       {fruits.map((fruit) => (
         <Card key={fruit.id}>
           <Image src={fruit.photo} alt={`Photo of ${fruit.name}`} />

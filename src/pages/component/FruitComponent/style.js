@@ -13,6 +13,19 @@ export const Container = styled.div`
   }
 `;
 
+export const Header = styled.div `
+background-color: grey;
+  padding: 0.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: 560px) {
+    align-self: start;
+    
+  }
+`;
+
 export const Card = styled.div`
   background-color: grey;
   height: 284px;
@@ -25,7 +38,6 @@ export const Card = styled.div`
 export const Title = styled.h1`
   text-transform: uppercase;
   font-size: 0.9em;
-  font-weight: 600;
   color: white;
   padding: 13px 14px 6px;
   margin: 0 auto;
