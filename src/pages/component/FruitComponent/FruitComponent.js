@@ -5,7 +5,7 @@ import {
   Card,
   Text,
   TextContainer,
-} from "../styled/style";
+} from "./style";
 
 import React, { useState, useEffect } from "react";
 

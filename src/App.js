@@ -1,5 +1,5 @@
 import React from 'react';
-import FruitComponent from './pages/fruitComponent';
+import FruitComponent from './pages/component/FruitComponent/FruitComponent';
 
 function App() {
   return (

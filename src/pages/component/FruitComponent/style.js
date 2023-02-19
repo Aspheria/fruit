@@ -3,9 +3,10 @@ import styled from "styled-components";
 export const Container = styled.div`
   background-color: black;
   position: relative;
-  margin: 20px auto;
 
   @media (min-width: 560px) {
+    max-width: 90%;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -14,7 +15,7 @@ export const Container = styled.div`
 
 export const Card = styled.div`
   background-color: grey;
-  height: 260px;
+  height: 284px;
   width: 180px;
   border-radius: 8px;
   padding-top: 26px;
@@ -45,6 +46,8 @@ export const Text = styled.p`
   margin: 0 auto;
   color: white;
   font-weight: 600;
+  text-overflow: ellipsis;
+  overflow: hidden;
 `;
 
 export const TextContainer = styled.div`
