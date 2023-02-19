@@ -1,6 +1,9 @@
 # fruit
 
 #npm run start
+#/home 
+#/details 
+#
 
 #Desafio - Aplicativo Fruit Calories
 
