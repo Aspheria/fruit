@@ -25,8 +25,6 @@ function FruitComponent() {
     fetchData();
   }, []);
 
-
-
    return (
     <Container>
       <Header>
@@ -47,7 +45,6 @@ function FruitComponent() {
       ))}
     </Container>
   );
-  
 }
 
 export default FruitComponent;

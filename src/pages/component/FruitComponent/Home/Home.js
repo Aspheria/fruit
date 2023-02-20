@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { Container, Title, Item, Text  } from "./style";
-import { getFruits } from "../api/api";
+import { Container, Title, Item, Text } from "./style";
+import { getFruits } from "../../../../api/api";
 
 function Home() {
   const [fruits, setFruits] = useState([]);
@@ -16,13 +16,14 @@ function Home() {
   }, []);
 
   return (
-
-<Container>
+    <Container>
       <Title>Lista de Frutas</Title>
-       <Item>
-         {fruits.map((fruit) => (
+      <Item>
+        {fruits.map((fruit) => (
           <Text>
-          <Link id={fruits.name} to={`/details/`}>{fruit.name} </Link>
+            <Link id={fruits.name} to={`/details/`}>
+              {fruit.name}{" "}
+            </Link>
           </Text>
         ))}
       </Item>
@@ -31,4 +32,3 @@ function Home() {
 }
 
 export default Home;
-
