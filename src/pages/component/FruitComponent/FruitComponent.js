@@ -10,22 +10,22 @@ import {
 
 import React, { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
+import { getFruits } from "../../../api/api";
 
 
 function FruitComponent() {
   const [fruits, setFruits] = useState([]);
 
   useEffect(() => {
-    async function fetchFruits() {
-      const response = await fetch(
-        "http://pocs.digitalpages.com.br/mock/api/fruits-api/fruits.json"
-      );
-      const data = await response.json();
+    async function fetchData() {
+      const data = await getFruits();
       setFruits(data);
     }
 
-    fetchFruits();
+    fetchData();
   }, []);
+
+
 
    return (
     <Container>
@@ -47,6 +47,7 @@ function FruitComponent() {
       ))}
     </Container>
   );
+  
 }
 
 export default FruitComponent;
